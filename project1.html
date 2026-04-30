@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cordino Signup App — Kevin Piper Project" />
+  <title>Cordino Signup App | Kevin Piper</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .project-hero-bg {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 40%, #2a0f0f 70%, #0a0a0a 100%);
+    }
+    .code-lines {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      opacity: 0.12;
+    }
+    .code-line {
+      position: absolute;
+      height: 1px;
+      background: var(--red);
+      animation: slideLine 4s linear infinite;
+    }
+    .code-line:nth-child(1) { width: 35%; top: 28%; left: -35%; animation-delay: 0s; }
+    .code-line:nth-child(2) { width: 50%; top: 45%; left: -50%; animation-delay: 1s; }
+    .code-line:nth-child(3) { width: 28%; top: 62%; left: -28%; animation-delay: 2s; }
+    @keyframes slideLine { to { left: 110%; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Kevin<span>Piper</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#projects">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a href="project1.html">Cordino Signup App</a></li>
+          <li><a href="project2.html">Pig Dice Game</a></li>
+          <li><a href="project3.html">Live Stream Presence</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="https://webdeveloper.kevpiper.com" target="_blank" rel="noopener">kevpiper.com ↗</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="project1.html">→ Cordino Signup App</a></li>
+      <li><a href="project2.html">→ Pig Dice Game</a></li>
+      <li><a href="project3.html">→ Live Stream Presence</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="project-hero">
+    <div class="project-hero-bg" style="position:absolute;inset:0;"></div>
+    <div class="code-lines">
+      <div class="code-line"></div>
+      <div class="code-line"></div>
+      <div class="code-line"></div>
+    </div>
+    <div class="project-hero-overlay"></div>
+    <div class="project-hero-content">
+      <div class="project-page-tag">Project 01 · Kotlin · Android · Laravel</div>
+      <h1 class="project-page-title">Cordino Signup App</h1>
+      <p class="project-page-subtitle">A full-stack Android app with a RESTful Laravel backend — built end to end.</p>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <div class="project-section">
+      <h2>Overview</h2>
+      <h3>What I Built</h3>
+      <p>
+        The Cordino Signup App is a native Android application built with <strong>Kotlin</strong> in Android Studio. It provides a clean, functional user signup flow — collecting user information, validating input on the client side, and communicating securely with a backend API to register and manage users.
+      </p>
+      <p>
+        What made this project a full-stack challenge was building and managing the backend myself using <strong>Laravel</strong> — a PHP framework for building RESTful APIs. That meant designing the API endpoints, handling authentication logic, and making sure the Android app and server could talk to each other reliably.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>How It Works</h2>
+      <h3>Architecture</h3>
+      <p>
+        The app follows a straightforward client-server model. The Android front end handles the UI — forms, validation, and user feedback. When a user submits the signup form, the app sends an HTTP request to the Laravel REST API, which processes the data, stores it, and returns a response.
+      </p>
+      <p>
+        Working with RESTful services meant learning how HTTP methods work in practice — POST for creating users, GET for retrieving data — and how to parse JSON responses in Kotlin to update the UI dynamically.
+      </p>
+      <div class="tech-list">
+        <span class="tech-badge">Kotlin</span>
+        <span class="tech-badge">Android Studio</span>
+        <span class="tech-badge">Laravel (PHP)</span>
+        <span class="tech-badge">REST API</span>
+        <span class="tech-badge">JSON</span>
+        <span class="tech-badge">HTTP / Retrofit</span>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2>What I Learned</h2>
+      <h3>Key Takeaways</h3>
+      <p>
+        This project pushed me into full-stack territory for the first time. Building the API with Laravel and consuming it in Kotlin forced me to think about how data flows between a mobile client and a server — and all the places things can go wrong in between.
+      </p>
+      <p>
+        It also reinforced good habits around input validation, error handling, and keeping concerns separated between the front end and backend.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>Stack</h2>
+      <h3>By the Numbers</h3>
+      <div class="result-grid">
+        <div class="result-card">
+          <div class="result-num">2</div>
+          <div class="result-label">Platforms Built (Android + API)</div>
+        </div>
+        <div class="result-card">
+          <div class="result-num">REST</div>
+          <div class="result-label">API Architecture</div>
+        </div>
+        <div class="result-card">
+          <div class="result-num">100%</div>
+          <div class="result-label">Built From Scratch</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> <span>Kevin Piper</span> · Built one step at a time</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

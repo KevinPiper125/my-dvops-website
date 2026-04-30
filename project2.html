@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pig Dice Game — Kevin Piper Android Project" />
+  <title>Pig Dice Game | Kevin Piper</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .project-hero-bg {
+      background: linear-gradient(135deg, #0a0a0a 0%, #120a0a 40%, #1f0d0d 70%, #0a0a0a 100%);
+    }
+    .dice-vis {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      opacity: 0.1;
+    }
+    .die {
+      position: absolute;
+      width: 40px; height: 40px;
+      border: 1px solid var(--red);
+      border-radius: 6px;
+      animation: dieSpin 6s ease-in-out infinite;
+    }
+    .die:nth-child(1) { top: 25%; left: 20%; animation-delay: 0s; }
+    .die:nth-child(2) { top: 50%; left: 40%; animation-delay: 1.5s; }
+    .die:nth-child(3) { top: 35%; left: 60%; animation-delay: 3s; }
+    @keyframes dieSpin {
+      0%, 100% { transform: rotate(0deg); opacity: 0.3; }
+      50% { transform: rotate(45deg); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Kevin<span>Piper</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#projects">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a href="project1.html">Cordino Signup App</a></li>
+          <li><a href="project2.html">Pig Dice Game</a></li>
+          <li><a href="project3.html">Live Stream Presence</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="https://webdeveloper.kevpiper.com" target="_blank" rel="noopener">kevpiper.com ↗</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="project1.html">→ Cordino Signup App</a></li>
+      <li><a href="project2.html">→ Pig Dice Game</a></li>
+      <li><a href="project3.html">→ Live Stream Presence</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="project-hero">
+    <div class="project-hero-bg" style="position:absolute;inset:0;"></div>
+    <div class="dice-vis">
+      <div class="die"></div>
+      <div class="die"></div>
+      <div class="die"></div>
+    </div>
+    <div class="project-hero-overlay"></div>
+    <div class="project-hero-content">
+      <div class="project-page-tag">Project 02 · Android Studio · Kotlin · Game Dev</div>
+      <h1 class="project-page-title">Pig Dice Game</h1>
+      <p class="project-page-subtitle">A turn-based Android dice game — simple concept, solid execution.</p>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <div class="project-section">
+      <h2>Overview</h2>
+      <h3>The Game</h3>
+      <p>
+        Pig is a classic turn-based dice game where each player rolls a die to accumulate points — but rolling a 1 wipes out your turn's score and passes the turn to your opponent. The strategy is knowing when to hold and bank your points versus pushing your luck for more.
+      </p>
+      <p>
+        I built this as a native Android app using <strong>Kotlin</strong> and <strong>Android Studio</strong>. The project was a great exercise in managing UI state, game logic, and turn-based interactivity on a mobile platform.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>How It Works</h2>
+      <h3>Game Logic & UI</h3>
+      <p>
+        The app tracks each player's accumulated score, their current turn score, and the overall game state. Players can choose to roll — risking their turn total — or hold to bank their points. First to reach the target score wins.
+      </p>
+      <p>
+        Building this in Android meant wiring up button click listeners, updating the UI in real time as game state changed, and handling edge cases like win conditions and turn resets cleanly. It's a small app, but it covers a lot of Android fundamentals: Activities, Views, event handling, and state management.
+      </p>
+      <div class="tech-list">
+        <span class="tech-badge">Kotlin</span>
+        <span class="tech-badge">Android Studio</span>
+        <span class="tech-badge">Android SDK</span>
+        <span class="tech-badge">UI State Management</span>
+        <span class="tech-badge">Event Listeners</span>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2>What I Learned</h2>
+      <h3>Key Takeaways</h3>
+      <p>
+        This project was about getting comfortable with the Android development lifecycle. Managing state across turns, updating the display in response to user actions, and thinking about what happens when things go wrong (what if a player closes the app mid-game?) are all real challenges even in a simple project like this.
+      </p>
+      <p>
+        It also helped me get faster in Android Studio — setting up emulators, debugging on device, and reading Logcat output efficiently.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>By the Numbers</h2>
+      <h3>Scope</h3>
+      <div class="result-grid">
+        <div class="result-card">
+          <div class="result-num">2</div>
+          <div class="result-label">Players Supported</div>
+        </div>
+        <div class="result-card">
+          <div class="result-num">100</div>
+          <div class="result-label">Points to Win</div>
+        </div>
+        <div class="result-card">
+          <div class="result-num">1</div>
+          <div class="result-label">Dreaded Pig Roll</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> <span>Kevin Piper</span> · Built one step at a time</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

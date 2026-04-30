@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Live Stream Presence — Kevin Piper Content Creation Project" />
+  <title>Live Stream Presence | Kevin Piper</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .project-hero-bg {
+      background: linear-gradient(135deg, #0a0a0a 0%, #150808 40%, #220e0e 70%, #0a0a0a 100%);
+    }
+    .signal-vis {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      opacity: 0.12;
+    }
+    .ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid var(--red);
+      top: 50%; left: 30%;
+      transform: translate(-50%, -50%);
+      animation: ripple 3s ease-out infinite;
+    }
+    .ring:nth-child(1) { width: 60px; height: 60px; animation-delay: 0s; }
+    .ring:nth-child(2) { width: 120px; height: 120px; animation-delay: 0.8s; }
+    .ring:nth-child(3) { width: 200px; height: 200px; animation-delay: 1.6s; }
+    @keyframes ripple {
+      0% { opacity: 1; transform: translate(-50%, -50%) scale(0.8); }
+      100% { opacity: 0; transform: translate(-50%, -50%) scale(1.3); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Kevin<span>Piper</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#projects">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a href="project1.html">Cordino Signup App</a></li>
+          <li><a href="project2.html">Pig Dice Game</a></li>
+          <li><a href="project3.html">Live Stream Presence</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="https://webdeveloper.kevpiper.com" target="_blank" rel="noopener">kevpiper.com ↗</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="project1.html">→ Cordino Signup App</a></li>
+      <li><a href="project2.html">→ Pig Dice Game</a></li>
+      <li><a href="project3.html">→ Live Stream Presence</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="project-hero">
+    <div class="project-hero-bg" style="position:absolute;inset:0;"></div>
+    <div class="signal-vis">
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+    </div>
+    <div class="project-hero-overlay"></div>
+    <div class="project-hero-content">
+      <div class="project-page-tag">Project 03 · Twitch · YouTube · Content Creation</div>
+      <h1 class="project-page-title">Live Stream Presence</h1>
+      <p class="project-page-subtitle">Built a live broadcasting presence on Twitch and YouTube from the ground up.</p>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <div class="project-section">
+      <h2>Overview</h2>
+      <h3>The Project</h3>
+      <p>
+        This wasn't just hitting "Go Live" and seeing what happens. Building a real streaming presence on <strong>Twitch</strong> and <strong>YouTube</strong> meant learning an entirely new skill set from scratch — audio engineering, video production, streaming software configuration, and graphic design for overlays and channel branding.
+      </p>
+      <p>
+        Starting with zero production experience, I worked through the technical side of live broadcasting: audio mixing, scene composition, stream quality settings, and creating the visual assets that make a channel feel professional and consistent.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>What I Built</h2>
+      <h3>Skills Developed</h3>
+      <p>
+        <strong>Audio/Video Production:</strong> Learning microphone placement, gain staging, noise reduction, and how to balance audio sources in a live context. On the video side — scene transitions, camera settings, and encoding for both Twitch and YouTube's different quality requirements.
+      </p>
+      <p>
+        <strong>Graphic Design:</strong> Designing stream overlays, alerts, channel banners, profile graphics, and thumbnails. Starting in tools I'd never used before and building up a consistent visual identity that I could own and iterate on.
+      </p>
+      <p>
+        <strong>Streaming Software:</strong> Configuring OBS and learning how scenes, sources, and filters work together to produce a clean broadcast. Troubleshooting dropped frames, audio sync issues, and bitrate settings all became part of the process.
+      </p>
+      <div class="tech-list">
+        <span class="tech-badge">Twitch</span>
+        <span class="tech-badge">YouTube</span>
+        <span class="tech-badge">OBS Studio</span>
+        <span class="tech-badge">Audio Engineering</span>
+        <span class="tech-badge">Video Production</span>
+        <span class="tech-badge">Graphic Design</span>
+        <span class="tech-badge">Channel Branding</span>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2>Why It Matters</h2>
+      <h3>The Bigger Picture</h3>
+      <p>
+        Content creation is how I document and share my journey in tech. It keeps me accountable, forces me to understand things well enough to talk about them, and connects me with a community of people on a similar path.
+      </p>
+      <p>
+        The skills are also genuinely technical — anyone who thinks streaming is just pointing a camera at themselves hasn't tried to debug an audio routing issue at 11pm before going live.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>Channels</h2>
+      <h3>Find Me Live</h3>
+      <div class="result-grid">
+        <div class="result-card">
+          <div class="result-num">🎥</div>
+          <div class="result-label"><a href="https://www.youtube.com/@klutchpotato" target="_blank" rel="noopener" style="color:var(--red-bright); text-decoration:none;">YouTube @klutchpotato</a></div>
+        </div>
+        <div class="result-card">
+          <div class="result-num">🟣</div>
+          <div class="result-label">Twitch — klutchpotato</div>
+        </div>
+        <div class="result-card">
+          <div class="result-num">0→</div>
+          <div class="result-label">Built From Scratch</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> <span>Kevin Piper</span> · Built one step at a time</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
