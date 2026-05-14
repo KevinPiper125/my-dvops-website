@@ -1,3 +1,6 @@
+Kevin Piper
+Demonstration of deploying website to gihub pages
+
 This is a working repository for my Introduction to DevOps Class.  This repository was to showcase my understanding of git and github.
 
 Steps I did to set up git for this assignment
