@@ -5,13 +5,16 @@
 3. Workflow triggers automatically on push to main branch
 
  Two Options to Trigger Depployment
-- Automatic: Push changes to the default branch
-- Manual: Go to Actions tab > Click "Deploy static content to Pages" > Click "Run workflow"
+ Automatic: Push changes to the default branch
+ Manual: Go to Actions tab > Click "Deploy static content to Pages" > Click "Run workflow"
 
  Deployment Details
-- The workflow automatically runs on every push
-- It uploads the repository contents to GitHub Pages
-- The site is accessible at:
+ The workflow automatically runs on every push
+ It uploads the repository contents to GitHub Pages
+ The site is accessible at:
+
+ I tested this out by adding things to the README and pushing it to the main branch
+ 
 
 
 Kevin Piper
