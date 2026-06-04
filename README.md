@@ -11,12 +11,13 @@
  Deployment Details
  The workflow automatically runs on every push
  It uploads the repository contents to GitHub Pages
- The site is accessible at:
-
- I tested this out by adding things to the README and pushing it to the main branch
+ The site is accessible at: https://kevinpiper125.github.io/my-dvops-website/
  
 
+ I tested this out by adding things to the README and pushing it to the main branch
 
+
+ (Last Assignment)
 Kevin Piper
 Demonstration of deploying website to gihub pages
 
