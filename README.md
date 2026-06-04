@@ -1,3 +1,19 @@
+ GitHub Actions Deployment
+ Setup Process
+1. Created `.github/workflows/deploy.yml` file
+2. Configured GitHub Pages to use GitHub Actions as the deployment source
+3. Workflow triggers automatically on push to main branch
+
+ Two Options to Trigger Depployment
+- Automatic: Push changes to the default branch
+- Manual: Go to Actions tab > Click "Deploy static content to Pages" > Click "Run workflow"
+
+ Deployment Details
+- The workflow automatically runs on every push
+- It uploads the repository contents to GitHub Pages
+- The site is accessible at:
+
+
 Kevin Piper
 Demonstration of deploying website to gihub pages
 
